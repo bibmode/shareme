@@ -15,8 +15,6 @@ const Login = () => {
 
     const { name, googleId, imageUrl } = response.profileObj;
 
-    console.log(response.Obj);
-
     const doc = {
       _id: googleId,
       _type: "user",
@@ -62,7 +60,7 @@ const Login = () => {
               )}
               onSuccess={responseGoogle}
               onFailure={responseGoogle}
-              cookiePolicy="single_host_origin"
+              cookiePolicy={"single_host_origin"}
             />
           </div>
         </div>
