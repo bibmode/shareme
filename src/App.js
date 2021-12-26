@@ -14,6 +14,7 @@ const App = () => {
       navigate("/login");
     }
   }, []);
+
   return (
     <Routes>
       <Route path="login" element={<Login />} />
